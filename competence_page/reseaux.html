@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Compétences</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <!-- Bouton Retour -->
+            <li class="nav-back-button"><a href="javascript:history.back()">Retour</a></li>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../moi.html">À propos de moi</a></li>
+            <li><a href="../formation.html">Formation</a></li>
+            <li><a href="../experience.html">Expérience professionnelle</a></li>
+            <li><a href="../competence.html">Compétences</a></li>
+            <li><a href="../projet.html">Projets</a></li>
+            <li><a href="../divers.html">Divers</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="reseaux-container">
+        <h1>Compétence : Réseaux</h1>
+
+        <div class="content-box">
+            <h2>Configuration d'un point d'accès wifi et bases du routage</h2>
+            <img src="../img/reseau.jpg" alt="Plan réseaux">
+            <ul>
+                <li>Missions :</li>
+                <ul>
+                    <li>Configuration du point d'accès wifi.</li>
+                    <li>Activation du routage et du NAT sur le PC1.</li>
+                    <li>Connexion du PC2 au point d'accès via le wifi.</li>
+                    <li>Réalisation de pings pour s'assurer de la connectivité des 2 appareils.</li>
+                    <li>Vérification de l'accès à internet avec le PC2.</li>
+                </ul>
+            </ul>
+        
+            <!-- Jauge de progression -->
+            <div role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="--value: 90"></div>
+        </div>
+
+
+        <div class="content-box">
+            <h2>Configuration de routeur Cisco</h2>
+            <ul>
+                <li>Missions :</li>
+                <ul>
+                    <li>Attribution d'adresses IP aux différentes interfaces.</li>
+                    <li>Création de routes entre plusieurs routeurs.</li>
+                    <li>Mise en place du protocole de routage RIP.</li>
+                </ul>
+            </ul>
+
+            <!-- Jauge de progression -->
+            <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="--value: 85"></div>
+        </div>
+
+        <div class="content-box">
+            <h2>Administration Système</h2>
+            <div class="image-container">
+                <img src="../img/virtual_box.png" alt="logo virtual box">
+                <img src="../img/docker.png" alt="docker">
+            </div>
+            <ul>
+                <li>Missions :</li>
+                <ul>
+                    <li>Découverte d'hyperviseurs tels que VirtualBox et VMWare ESXi.</li>
+                    <li>Mise en œuvre d'un système de sauvegarde avec l'outil rsync.</li>
+                    <li>Installation et configuration de l'Active Directory.</li>
+                    <li>Découverte de la conteneurisation avec Docker.</li>
+                </ul>
+            </ul>
+
+            <!-- Jauge de progression -->
+            <div role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="--value: 90"></div>
+        </div>
+    </div>
+
+    <!-- Footer collé en bas -->
+    <footer>
+        <ul>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../CV.pdf" target="_blank">CV</a></li>
+            <li><a href="../video/capsule_vidéo.mp4" target="_blank">Capsule vidéo</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

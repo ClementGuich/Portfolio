@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projets</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <!-- Bouton Retour -->
+            <li class="nav-back-button"><a href="javascript:history.back()">Retour</a></li>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../moi.html">À propos de moi</a></li>
+            <li><a href="../formation.html">Formation</a></li>
+            <li><a href="../experience.html">Expérience professionnelle</a></li>
+            <li><a href="../competence.html">Compétences</a></li>
+            <li><a href="../projet.html">Projets</a></li>
+            <li><a href="../divers.html">Divers</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="projet-formation-container">
+        <h1>Projets de la formation</h1>
+
+        <h1>Réseaux</h1>
+        <div class="content-box-projet">
+            <h2>Configuration d'un point d'accès wifi sur le réseau informatique de l'I.U.T.</h2>
+            <img src="../img/plan.png" alt="plan réseau">
+            <ul>
+                <li>Contexte : Travail pratique réalisé en binôme.</li>
+                <li>Objectifs :</li>
+                <ul>
+                    <li>Installer et configurer le point d’accès IEEE-802.11.</li>                
+                    <li>Mettre en place une sécurité d’accès au point d'accès.</li>
+                </ul>
+                <li>Missions :</li>
+                <ul>
+                    <li><b>Réinitialisation</b> du point d'accès wifi.</li>
+                    <li><b>Branchement</b> de cet appareil sur un ordinateur via un câble Ethernet.</li>
+                    <li><b>Changement de l'adresse IP</b> de la deuxième carte réseau de l'ordinateur pour qu'elle soit dans <b>le même réseau</b> que le point d'accès wifi.</li>
+                    <li><b>Accès à l'interface de configuration de l'appareil</b> en tapant son adresse IP dans un navigateur de recherche.</li>
+                    <li><b>Configuration</b> de son nom ainsi que du mot de passe wifi.</li>
+                    <li><b>Attribution de l'adresse IP</b> du point d'accès avec le <b>protocole DHCP</b>, pour qu'il soit dans le réseau que l'on souhaite (ici celui de l'I.U.T).</li>
+                    <li>Activation du <b>NAT</b>.</li>
+                    <li><b>Branchement</b> du point d'accès sur le Réseau de l'I.U.T.</li><br>
+                </ul>
+            </ul>
+        
+            <!-- Jauge de progression -->
+            <div role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="--value: 95"></div>
+        </div>
+
+
+        <div class="content-box-projet">
+            <h2>Technologie de l'internet.</h2>
+            <ul>
+                <li>Contexte : Travail pratique réalisé en binôme pendant 3 heures.</li>
+                <li>Objectifs :</li>
+                <ul>
+                    <li>Observer les connexions TCP.</li>
+                    <li>Créer un paquet TCP de demande de connexion.</li>
+                    <li>Réaliser un outil de scan de ports.</li>
+                </ul>
+                <li>Missions :</li>
+                <ul>
+                    <li><b>Installation</b> d'un serveur <b>FTP vsftpd</b> sur la première machine.</li>
+                    <li><b>Création</b> d'un  <b>compte utilisateur</b>.</li>
+                    <li><b>Installation</b> de <b>Filezilla</b> sur la deuxième machine.</li>
+                    <li><b>Établissement</b> d'une <b>connexion FTP</b> grâce au compte utilisateur créé précédemment.</li>
+                    <li><b>Observation</b> de cette connexion avec <b>Wireshark</b>.</li>
+                    <li><b>Observation</b> de la <b>sécurité du serveur FTP</b> notamment avec un <b>mot de passe en clair</b>.</li>
+                    <li><b>Observation</b> avec Wireshark de la <b>déconnexion du serveur FTP</b>.</li>
+                    <li><b>Installation</b> de <b>Scapy</b>.</li>
+                    <li><b>Création</b> d'un paquet de <b>demande de connexion FTP</b>.</li>
+                    <li><b>Observation</b> de ce <b>paquet sur le réseau</b>.</li>
+                    <li><b>Création</b> d'un script <b>Scapy</b> afin de voir quels sont les <b>ports ouverts</b>.</li>
+                    <li><b>Création</b> d'un script <b>Scapy</b> qui permet d'<b>attaquer le serveur FTP</b>.</li>
+                </ul>
+            </ul>
+            <p><u>Script pour scanner les ports :</u></p>
+                <img id="scan_port" src="../img/scan_port.png" alt="scan_port">
+            <p><u>Attaque SYN Flood :</u></p>
+                <img id="ddos" src="../img/ddos.png" alt="Attaque SYN Flood">
+            
+            <br>
+        
+            <!-- Jauge de progression -->
+            <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="--value: 70"></div>
+        </div>
+
+        <div class="content-box-projet">
+            <h2>Projet intégratif.</h2>
+            <ul>
+                <li>Contexte : Travail pratique réalisé par groupe de 5.</li>
+                <li>Objectifs :</li>
+                <ul>
+                    <li>Concevoir et mettre en place une infrastructure correspondant au réseau d’une petite entreprise.</li>
+                </ul>
+                <li>Missions :</li>
+                <ul>
+                    <li><b>Description précise</b> et <b>technique</b> de l’installation, des services réseaux utilisés.</li>
+                    <li><b>Ordonnancement</b> et <b>répartition</b> des <b>tâches</b>.</li>
+                    <li><b>Communication</b> des <b>différents appareils</b> entre eux.</li>
+                    <li><b>Mise en œuvre</b> des <b>services réseaux</b> et <b>utilisateurs</b>.</li>
+                    <li><b>Mise en œuvre</b> des <b>attaques</b> et <b>démonstration</b> des <b>contre-mesures</b>.</li>
+                    <li><b>Rédaction d'un site web</b> contenant les <b>missions réalisées</b>.</li>
+                </ul>
+            </ul>
+        
+            <!-- Jauge de progression -->
+            <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="--value: 70"></div>
+        </div>
+        <h1>Télécommunications</h1>
+
+        <div class="content-box-projet">
+            <h2>Réaliser un montage fonctionnel avec de la fibre optique (1310 nm).</h2>
+            <img src="../img/montage.png" alt="montage fibre">
+            <ul>
+                <li>Contexte : Travail pratique réalisé en binôme pendant 3 heures.</li>
+                <li>Objectifs :</li>
+                <ul>
+                    <li>Comprendre les mesures en photométrie et en réflectométrie sur une fibre optique.</li>
+                    <li>Savoir faire des calculs de puissance et d’atténuation.</li>
+                </ul>
+                <li>Missions :</li>
+                <ul>
+                    <li><b>Allumer</b> la source lumineuse, ici un <b>réflectomètre</b>.</li>
+                    <li>Sélection du <b>mode de mesure</b> "source lumineuse".</li>
+                    <li>Changement de la <b>longueur d'onde</b> à 1310 nm.</li>
+                    <li><b>Branchement</b> de la sortie du <b>réflectomètre</b> à la <b>bobine d'amorce</b> via une <b>jarretière</b>.</li>
+                    <li><b>Branchement</b> de la <b>bobine d'amorce</b> à la <b>bobine de fin</b>.</li>
+                    <li><b>Branchement</b> de la <b>bobine de fin</b> à un <b>photomètre</b>.</li>
+                    <li>Prise de <b>mesures</b> notamment avec une <b>fibre à tester</b>. </li>
+                    <img id="fibre_test" src="../img/montage_test.png" alt="Montage avec fibre à tester">
+                </ul>
+            </ul>
+        
+            <!-- Jauge de progression -->
+            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="--value: 60"></div>
+        </div>
+
+        <div class="content-box-projet">
+            <h2>Mesurer et caractériser un signal.</h2>
+            <img id="matlab" src="../img/matlab.png" alt="logo matlab">
+            <ul>
+                <li>Contexte : Travail pratique réalisé individuellement.</li>
+                <li>Objectifs :</li>
+                    <ul>
+                        <li>Réaliser des simulations numériques avec MATLAB.</li>
+                    </ul>
+                <li>Missions :</li>
+                <ul>
+                    <li><b>Initiation</b> au langage de programmation <b>MATLAB</b>.</li>
+                    <li><b>Implémentation</b> de <b>différentes méthodes</b> pour <b>calculer les intégrales</b> comme la <b>méthode des rectangles</b>.</li>
+                    <li><b>Étude</b> d'un <b>signal temporel</b> à l'aide de <b>MATLAB</b>.</li>
+                    <li><b>Étude</b> d'un <b>canal radio</b> à l'aide de <b>MATLAB</b>.</li>
+                </ul>
+            </ul>
+        
+            <!-- Jauge de progression -->
+            <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="--value: 60"></div>
+        </div>
+
+        <h1>Programmation Web</h1>
+
+        <div class="content-box-projet">
+            <h2>Apprendre les bases de la programmation web.</h2>
+            <ul>
+                <li>Contexte : Travail pratique réalisé individuellement.</li>
+                <li>Objectifs :</li>
+                    <ul>
+                        <li>Comprendre l'utilisation des balises en HTML.</li>
+                        <li>Savoir se servir de ces balises pour écrire le code CSS.</li>
+                    </ul>
+                <li>Missions :</li>
+                <ul>
+                    <li>Codage en HTML avec des <b>balises</b>.</li>
+                    <li>Création de <b>listes</b> à l'aide des balises <b>"ul"</b> et <b>"li"</b>.</li>
+                    <img id="liste" src="../img/liste.png" alt="liste prog">
+                    <li><b>Codage</b> en CSS.</li>
+                    <li>Ajout d'un <b>style</b> pour le texte ainsi que les images.</li> 
+                </ul>
+            </ul>
+        
+            <!-- Jauge de progression -->
+            <div role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="--value: 75"></div>
+        </div>
+
+        <div class="content-box-projet">
+            <h2>Sudoku en PHP.</h2>
+            <img src="../img/sudoku.png" alt="Sudoku">
+            <ul>
+                <li>Contexte : Travail pratique réalisé individuellement.</li>
+                <li>Objectifs :</li>
+                    <ul>
+                        <li>Apprendre les bases du langage PHP.</li>
+                    </ul>
+                <li>Missions :</li>
+                <ul>
+                    <li>Création de <b>plusieurs fichiers</b> pour <b>organiser</b> le projet.</li>
+                    <li>Création de <b>fonctions</b> pour <b>générer une grille valide</b>.</li>
+                    <li><b>Affichage</b> de la totalité du <b>contenu de la grille</b> dans un <b>tableau html</b> via une <b>fonction</b>.</li>
+                    <li><b>Modification</b> d'une <b>ancienne fonction</b> pour avoir des <b>trous dans la grille</b>.</li>
+                    <li><b>Récupération</b> du <b>contenu de la grille</b> et <b>vérification de sa validité</b> avant d'en informer l'utilisateur.</li>
+                </ul>
+            </ul>
+        
+            <!-- Jauge de progression -->
+            <div role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="--value: 55"></div>
+        </div>
+    </div>
+
+    <!-- Footer collé en bas -->
+    <footer>
+        <ul>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../CV.pdf" target="_blank">CV</a></li>
+            <li><a href="../video/capsule_vidéo.mp4" target="_blank">Capsule vidéo</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

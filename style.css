@@ -1,0 +1,598 @@
+/* Style de base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Style de la barre de navigation */
+nav {
+    width: 100%;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Bouton Retour à gauche */
+.nav-back-button {
+    position: absolute;
+    left: 10px;
+    top: 50%; /* Centre verticalement */
+    transform: translateY(-50%); /* Ajuste l'alignement pour être exactement centré */
+}
+
+.nav-back-button a {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px; /* Boutons arrondis */
+    font-weight: bold;
+}
+
+.nav-back-button a:hover {
+    background-color: #555;
+}
+
+/* Style du contenu principal */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 50px; /* pour éviter que le contenu soit masqué par la nav */
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 50px;
+    text-align: left;
+}
+
+/* Agrandir l'image tout en gardant le cercle */
+.image-content img {
+    border-radius: 50%;
+    width: 250px; /* Augmenter la taille de l'image */
+    height: 250px; /* Assurer que la hauteur est aussi augmentée */
+    object-fit: cover; /* Maintenir le cadrage */
+}
+
+/* Styles supplémentaires */
+h1 {
+    font-size: 4rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    color: #ddd;
+}
+
+a#lien{
+    color:#555;
+    text-decoration: none;
+}
+
+a#lien:hover{
+    color: #8C8C8C;
+}
+
+.formation-container {
+    padding-top: 90px; /* Pour éviter que le contenu soit masqué par la barre de navigation */
+    text-align: center;
+}
+
+.formation-item {
+    margin-bottom: 60px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+.formation-item li {
+    font-size: 1.5rem; /* Même taille de police que les paragraphes */
+    color: #555; /* Même couleur que le texte des paragraphes */
+    margin-bottom: 10px; /* Un petit espace sous chaque élément de liste pour la lisibilité */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+
+.about-container {
+    padding-top: 90px; /* Pour éviter que le contenu soit masqué par la barre de navigation */
+    text-align: left;
+    max-width: 1500px; /* Augmenter cette valeur pour rendre le carré plus large */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.about-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-container p {
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Conteneur principal pour l'expérience professionnelle */
+.experience-container {
+    padding-top: 90px; /* Pour éviter que le contenu soit masqué par la barre de navigation */
+    text-align: center;
+}
+
+/* Style pour chaque section de l'expérience professionnelle */
+.experience-item {
+    margin-bottom: 60px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* Style des éléments de la liste dans chaque section */
+.experience-item li {
+    font-size: 1.5rem; /* Même taille de police que les paragraphes */
+    color: #555; /* Même couleur que le texte des paragraphes */
+    margin-bottom: 10px; /* Un petit espace sous chaque élément de liste pour la lisibilité */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+/* Style pour le sous-titre (ex : Travail étudiant) */
+.experience-item h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.experience-item ul ul li {
+    font-size: 1.3rem; /* Légèrement plus petit pour les sous-points */
+    margin-bottom: 8px;
+}
+
+/* Si tu veux ajouter un logo, tu peux utiliser cette classe */
+.experience-item img {
+    display: block;
+    margin: 20px auto;
+    width: 500px; /* Ajuste la taille du logo ici */
+    border-radius: 10px;
+}
+
+#jauge {
+    font-size: 2em;
+    margin-top: 85px;
+}
+
+/* Conteneur pour les compétences */
+.competence-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; /* Ajuste selon la hauteur de la nav */
+    gap: 40px; /* Espacement vertical entre les lignes */
+    padding-bottom: 20px;
+}
+
+.competence-container-projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacement vertical entre les lignes */
+    padding-bottom: 20px;
+}
+
+
+/* Chaque ligne de compétences */
+.competence-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espacement horizontal entre les carrés */
+}
+
+a.competence-item{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Chaque carré de compétence */
+.competence-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 260px; /* Largeur des carrés */
+    height: 260px; /* Hauteur des carrés */
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem; /* Taille de la police */
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol */
+.competence-item:hover {
+    background-color: #eaeaea;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombre plus douce */
+    transform: scale(1.05); /* Agrandissement au survol, moins agressif */
+}
+
+@keyframes progress {
+    0% { --percentage: 0; }
+    100% { --percentage: var(--value); }
+  }
+  
+  @property --percentage {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+  
+  [role="progressbar"] {
+    --percentage: var(--value);
+    --primary: #369;
+    --secondary: #adf;
+    --size: 150px; /* Ajuste la taille ici */
+    animation: progress 2s 0.5s forwards;
+    width: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    margin: 20px auto; /* Centre les jauges */
+  }
+  
+  [role="progressbar"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+  }
+  
+  [role="progressbar"]::after {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--primary);
+    font-weight: bold;
+  }
+  
+
+/* Container style for the text and progress bar */
+/* Style du contenu principal */
+.reseaux-container {
+    margin-top: 95%; /* Retirer la marge haute excessive */
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacement entre les sections */
+}
+
+.telecom-container{
+    margin-top: 65%; /* Retirer la marge haute excessive */
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacement entre les sections */
+}
+
+.prog-container{
+    margin-top: 75%; /* Retirer la marge haute excessive */
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacement entre les sections */
+}
+
+.telephonie-container{
+    margin-top: 35%; /* Retirer la marge haute excessive */
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacement entre les sections */
+}
+
+.qualite-container{
+    margin-top: 50%; /* Retirer la marge haute excessive */
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacement entre les sections */
+}
+
+.content-box {
+    border: 2px solid #369;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box li {
+    font-size: 1.5rem; /* Même taille de police que les paragraphes */
+    color: #555; /* Même couleur que le texte des paragraphes */
+    margin-bottom: 10px; /* Un petit espace sous chaque élément de liste pour la lisibilité */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+.content-box h2 {
+    font-size: 1.5em; /* Taille de police plus grande pour le titre */
+    color: #333; /* Couleur du texte */
+    margin-bottom: 15px; /* Espacement sous le titre */
+}
+
+.content-box ul {
+    text-align: left; /* Aligner le texte des listes à gauche */
+    margin-bottom: 20px; /* Espacement sous la liste */
+    padding-left: 20px; /* Indentation de la liste */
+}
+
+.content-box ul li {
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+}
+
+.content-box img{
+    border-radius: 20px;
+    padding: 10px;
+    width: 70%;
+}
+
+#sql {
+    width: 40%;
+}
+
+/* Conteneur flex pour aligner les images côte à côte et centrer */
+.content-box .image-container {
+    border-radius: 20px;
+    padding: 20px;
+    width: 30%; /* Augmente la largeur pour laisser de la place aux images */
+    display: flex;
+    justify-content: space-around; /* Espace entre les images */
+    align-items: center;
+    margin: 0 auto; /* Centre le conteneur */
+    margin-left: 200px;
+}
+
+.projet-formation-container{
+    margin-top: 450%; /* Retirer la marge haute excessive */
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacement entre les sections */
+}
+
+.formation-container{
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacement entre les sections */
+}
+
+.divers-container{
+    padding-bottom: 50px;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacement entre les sections */
+}
+
+.personnel-container{
+    margin-top: 30%; /* Retirer la marge haute excessive */
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacement entre les sections */
+}
+
+
+.content-box-projet{
+    border: 2px solid #369;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 1100px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box-projet li {
+    font-size: 1.5rem; /* Même taille de police que les paragraphes */
+    color: #555; /* Même couleur que le texte des paragraphes */
+    margin-bottom: 10px; /* Un petit espace sous chaque élément de liste pour la lisibilité */
+    text-align: left; /* Alignement du texte à gauche */  
+}
+.content-box-projet h2 {
+    font-size: 1.5em; /* Taille de police plus grande pour le titre */
+    color: #333; /* Couleur du texte */
+    margin-bottom: 15px; /* Espacement sous le titre */  
+}
+.content-box-projet ul {
+    text-align: left; /* Aligner le texte des listes à gauche */
+    margin-bottom: 20px; /* Espacement sous la liste */
+    padding-left: 20px; /* Indentation de la liste */    
+}
+
+.content-box-projet ul li {
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */   
+}
+
+.content-box-projet img{
+    border-radius: 20px;
+    padding: 10px;
+    width: 50%;
+}
+
+#liste {
+    width: 30%;
+}
+
+#matlab{
+    width: 20%;
+}
+
+#omv{
+    width: 30%;
+}
+
+.divers-item {
+    margin-bottom: 60px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.divers-item li {
+    font-size: 1.5rem; /* Même taille de police que les paragraphes */
+    color: #555; /* Même couleur que le texte des paragraphes */
+    margin-bottom: 10px; /* Un petit espace sous chaque élément de liste pour la lisibilité */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+.divers-item h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.divers-item ul ul li {
+    font-size: 1.3rem; /* Légèrement plus petit pour les sous-points */
+    margin-bottom: 8px;
+}
+
+/* Si tu veux ajouter un logo, tu peux utiliser cette classe */
+.divers-item img {
+    display: block;
+    margin: 20px auto;
+    width: 500px; /* Ajuste la taille du logo ici */
+    border-radius: 10px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center; /* Aligner les images au centre */
+    gap: 5px; /* Espacement entre les images */
+    padding: 20px 0;
+}
+
+.image-row img {
+    width: 500px; /* Ajuste la taille des images si nécessaire */
+    height: auto;
+    border-radius: 10px;
+}
