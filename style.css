@@ -192,7 +192,7 @@ a#lien:hover{
 
 /* Conteneur principal pour l'expérience professionnelle */
 .experience-container {
-    padding-top: 90px; /* Pour éviter que le contenu soit masqué par la barre de navigation */
+    padding-top: 800px; /* Pour éviter que le contenu soit masqué par la barre de navigation */
     text-align: center;
 }
 
@@ -355,7 +355,7 @@ a.competence-item{
 /* Container style for the text and progress bar */
 /* Style du contenu principal */
 .reseaux-container {
-    margin-top: 95%; /* Retirer la marge haute excessive */
+    margin-top: 175%; /* Retirer la marge haute excessive */
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
