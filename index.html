@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clément Guichard — Portfolio</title>
+<meta name="description" content="Portfolio de Clément Guichard, étudiant en Master Cybersécurité en alternance chez Andros. Formation, expérience, compétences et projets.">
+<meta property="og:title" content="Clément Guichard — Portfolio">
+<meta property="og:description" content="Étudiant en Master Cybersécurité — alternance chez Andros.">
+<meta property="og:image" content="img/2.JPG">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E1826'/%3E%3Ccircle cx='20' cy='44' r='4.5' fill='%234FE3D1'/%3E%3Ccircle cx='44' cy='44' r='4.5' fill='%234FE3D1'/%3E%3Ccircle cx='32' cy='20' r='4.5' fill='%23F6A94B'/%3E%3Cpath d='M20 44 L32 20 L44 44' stroke='%23345069' stroke-width='2.5' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-header" id="site-header">
+  <div class="container nav">
+    <a href="#accueil" class="nav__brand" aria-label="Retour à l'accueil">
+      <span class="nav__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="32" height="32"><circle cx="9" cy="23" r="2.6" fill="var(--accent-teal)"/><circle cx="23" cy="23" r="2.6" fill="var(--accent-teal)"/><circle cx="16" cy="9" r="2.6" fill="var(--accent-amber)"/><path d="M9 23 16 9 23 23" stroke="var(--border-strong)" stroke-width="2" fill="none"/></svg>
+      </span>
+      <span class="nav__name">Clément <strong>Guichard</strong></span>
+    </a>
+
+    <nav class="nav__links" id="nav-links" aria-label="Navigation principale">
+      <a href="#apropos" class="nav__link">À propos</a>
+      <a href="#formation" class="nav__link">Formation</a>
+      <a href="#experience" class="nav__link">Expérience</a>
+      <a href="#competences" class="nav__link">Compétences</a>
+      <a href="#projets" class="nav__link">Projets</a>
+      <a href="#divers" class="nav__link">Divers</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Changer de thème">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+      </button>
+      <a href="#contact" class="btn btn--ghost btn--sm nav__cta">Contact</a>
+      <a href="CV.pdf" class="btn btn--primary btn--sm nav__cta" download>CV</a>
+      <button class="nav__burger" id="nav-burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="accueil">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Étudiant en Master Cybersécurité</p>
+        <h1 class="hero__title">Clément Guichard</h1>
+        <p class="hero__lead">
+          <p>
+  Actuellement en <strong>1re année de Master Cybersécurité au CNAM d’Angers</strong>, 
+  je poursuis mon parcours en alternance au sein de <strong>l’équipe cybersécurité d’Andros</strong>.
+</p>
+<p>
+  Diplômé d’un <strong>BUT Réseaux &amp; Télécommunications</strong>, 
+  j’ai développé de solides compétences en infrastructures réseau, systèmes et sécurité. 
+  Je mets aujourd’hui ces compétences au service de la <strong>sécurisation des systèmes d’information</strong>, 
+  en participant aux différents enjeux et projets liés à la <strong>cybersécurité</strong> au sein du groupe Andros.
+</p>
+
+        </p>
+
+        <ul class="hero__tags" aria-label="Points clés">
+          <li>1ᵉ année Master Cybersécurité</li>
+          <li>Alternance — Andros</li>
+        </ul>
+
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--primary">Me contacter</a>
+          <a href="CV.pdf" class="btn btn--outline" download>Télécharger le CV</a>
+
+        </div>
+      </div>
+
+      <div class="hero__portrait" aria-hidden="false">
+        <svg class="hero__orbit" viewBox="0 0 360 360" aria-hidden="true">
+          <circle cx="180" cy="180" r="150" class="orbit-ring"/>
+          <path class="orbit-line" d="M45 230 C 90 120, 260 120, 320 190" />
+          <path class="orbit-line orbit-line--alt" d="M50 120 C 120 260, 250 260, 300 150" />
+          <circle class="orbit-node" cx="45" cy="230" r="5"/>
+          <circle class="orbit-node" cx="320" cy="190" r="5"/>
+          <circle class="orbit-node orbit-node--amber" cx="50" cy="120" r="5"/>
+          <circle class="orbit-node orbit-node--amber" cx="300" cy="150" r="5"/>
+          <circle class="packet" r="3.5">
+            <animateMotion dur="5s" repeatCount="indefinite" path="M45 230 C 90 120, 260 120, 320 190"/>
+          </circle>
+          <circle class="packet packet--amber" r="3.5">
+            <animateMotion dur="6.5s" repeatCount="indefinite" path="M50 120 C 120 260, 250 260, 300 150"/>
+          </circle>
+        </svg>
+        <img src="img/2.JPG" alt="Photo de Clément Guichard" class="hero__photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ A PROPOS ============ -->
+  <section class="section" id="apropos">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__mark" aria-hidden="true"></span>
+        <h2>À propos de moi</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            Diplômé d’un <strong>BUT Réseaux et Télécommunications</strong>, parcours <strong>Cybersécurité</strong>, je poursuis aujourd’hui mes études en première année de <strong>Master Cybersécurité</strong> au CNAM à Angers, en alternance au sein du groupe <strong>Andros</strong>.
+          </p>
+          <p>
+            Mon parcours m’a permis de développer de solides bases en réseaux, systèmes et cybersécurité, ainsi que des qualités telles que l’autonomie, la rigueur, l’adaptabilité et l’esprit d’équipe.
+          </p>
+          <p>
+            À travers mon Master et mon expérience en alternance, je souhaite approfondir mes connaissances et développer une expertise dans la sécurisation et la protection des systèmes d’information, tout en confrontant mes acquis à des problématiques concrètes en entreprise.
+          </p>
+          <p>
+            Curieux et motivé, je souhaite continuer à développer mes compétences dans les domaines des réseaux et de la cybersécurité et construire progressivement mon projet professionnel dans ce secteur.
+          </p>
+          <p>
+            Cette poursuite d'études me permettra ainsi de continuer à développer mes compétences en
+            cybersécurité tout en mettant en pratique mes connaissances au sein d'Andros.
+          </p>
+        </div>
+
+        <aside class="about__qualities" aria-label="Qualités développées">
+          <h3>Qualités développées</h3>
+          <ul>
+            <li><span class="dot"></span>Adaptabilité</li>
+            <li><span class="dot"></span>Esprit d'équipe</li>
+            <li><span class="dot"></span>Autonomie</li>
+            <li><span class="dot"></span>Rigueur</li>
+          </ul>
+          <a href="#competences" class="about__link">Voir le détail dans « Compétences »</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FORMATION ============ -->
+  <section class="section section--alt" id="formation">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__mark" aria-hidden="true"></span>
+        <h2>Formation</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item timeline__item--upcoming">
+          <div class="timeline__date">Sept. 2026 - Aujourd'hui</div>
+          <div class="timeline__body">
+            <span class="badge badge--amber">1e année en cours</span>
+            <h3>Master Cybersécurité — CNAM d'Angers</h3>
+            <p>En alternance chez Andros dans l'équipe Cybersécurité, dans la continuité du BUT Réseaux et Télécommunications.</p>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__date">2023 — 2026</div>
+          <div class="timeline__body">
+            <h3>BUT Réseaux et Télécommunications</h3>
+            <p class="timeline__place">IUT d'Aubière (63) — option Cybersécurité</p>
+            <ul>
+              <li>Apprentissage des réseaux, des télécommunications et de la téléphonie.</li>
+              <li>Goût particulier pour les travaux pratiques de réseaux.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__date">Juin 2023</div>
+          <div class="timeline__body">
+            <h3>Baccalauréat Général</h3>
+            <p class="timeline__place">Mention Assez bien</p>
+            <ul>
+              <li>Spécialités Mathématiques et Numérique et Sciences de l'Informatique.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__mark" aria-hidden="true"></span>
+        <h2>Expérience professionnelle</h2>
+      </div>
+
+      <div class="exp-list">
+
+        <article class="exp-card">
+          <img src="img/logo_andros.png" alt="Logo Andros" class="exp-card__logo">
+          <div class="exp-card__body">
+            <div class="exp-card__top">
+              <h3>Alternance — Andros</h3>
+              <span class="badge badge--teal">En cours</span>
+            </div>
+            <p class="exp-card__meta">4 septembre 2026 — Aujourd'hui</p>
+            <ul>
+              <li>Etude et mise en place d'une station de <strong>décontamination USB</strong>.</li>
+              <li>Intégration d'une filiale dans l'outil <strong>Nessus</strong> afin de scanner les vulnérabilités des différentes machines.</li>
+            </ul>
+            <p class="exp-card__result"><strong>Résultats :</strong> En cours.</p>
+          </div>
+        </article>
+
+        <article class="exp-card">
+          <img src="img/logo_andros.png" alt="Logo Andros" class="exp-card__logo">
+          <div class="exp-card__body">
+            <div class="exp-card__top">
+              <h3>Alternance — Andros</h3>
+            </div>
+            <p class="exp-card__meta">1ᵉʳ octobre 2025 — 3 septembre 2026</p>
+            <ul>
+              <li>Étude d'un outil d'administration LAN SolarWinds pour centraliser les équipements (switchs…).</li>
+              <li>Exploitation LAN (tickets JIRA) et déploiement d'un réseau dédié aux administrateurs IT (VLAN).</li>
+              <li>Métrologie et visibilité SD-WAN pour connaître la charge des liens SD-WAN et MPLS.</li>
+              <li>Étude d'une solution de NAC filaire (contrôle d'accès réseau au niveau des switchs).</li>
+            </ul>
+            <p class="exp-card__result"><strong>Résultats :</strong> L'outil à été étudié et mis en place avec succès.</p>
+          </div>
+        </article>
+
+        <article class="exp-card">
+          <img src="img/logo_andros.png" alt="Logo Andros" class="exp-card__logo">
+          <div class="exp-card__body">
+            <div class="exp-card__top">
+              <h3>Stage — Andros</h3>
+            </div>
+            <p class="exp-card__meta">7 avril — 13 juin 2025 · 10 semaines</p>
+            <ul>
+              <li>Étude d'un portail captif pour le Wi-Fi public sur un pare-feu Fortinet et un contrôleur Wi-Fi Cisco.</li>
+              <li>Étude de la résilience et de l'obsolescence des fibres optiques.</li>
+              <li>Remplacement de petits switchs Cisco.</li>
+              <li>Configuration d'un switch Cisco cœur de réseau.</li>
+            </ul>
+            <p class="exp-card__result"><strong>Résultats :</strong> Toutes les tâches ont été réalisées avec succès et rigueur.</p>
+          </div>
+        </article>
+
+        <article class="exp-card">
+          <img src="img/Intermarche.png" alt="Logo Intermarché" class="exp-card__logo">
+          <div class="exp-card__body">
+            <div class="exp-card__top">
+              <h3>Travail étudiant — Intermarché</h3>
+            </div>
+            <p class="exp-card__meta">8 juillet — 17 août 2024 · Montignac-Lascaux (24)</p>
+            <ul>
+              <li>Dépotage des palettes.</li>
+              <li>Mise en rayon des produits d'arrivage (pâtes, huile, condiments…).</li>
+            </ul>
+            <p class="exp-card__result"><strong>Résultat :</strong> Missions réalisées avec rigueur et satisfaction de l’employeur.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMPETENCES ============ -->
+  <section class="section section--alt" id="competences">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__mark" aria-hidden="true"></span>
+        <h2>Compétences</h2>
+      </div>
+      <p class="section__intro">Ces cinq domaines correspondent aux compétences attendues en BUT Réseaux et Télécommunications.</p>
+
+      <div class="tabs" id="tabs-competences">
+        <div class="tabs__list" role="tablist" aria-label="Domaines de compétences">
+          <button class="tab" role="tab" aria-selected="true" data-tab="reseaux">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="19" r="2.3"/><circle cx="19" cy="19" r="2.3"/><circle cx="12" cy="5" r="2.3"/><path d="M5 16.7 12 7.3M19 16.7 12 7.3"/></svg>
+            Réseaux
+          </button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="telecom">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20v-6M8 14a4 4 0 0 1 8 0M5 10a9 9 0 0 1 14 0"/><circle cx="12" cy="20" r="1.4" fill="currentColor" stroke="none"/></svg>
+            Télécommunications
+          </button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="programmation">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13 5 11 19"/></svg>
+            Programmation
+          </button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="telephonie">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5c0 8 7 15 15 15l3-4-6-3-2 2c-2-1-4-3-5-5l2-2-3-6Z"/></svg>
+            Téléphonie
+          </button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="qualite">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L12 16.9 6.4 20l1.4-6.2L3 9.5l6.4-.6Z"/></svg>
+            Qualité
+          </button>
+        </div>
+
+        <!-- RESEAUX -->
+        <div class="tab-panel" data-panel="reseaux">
+          <div class="skill-grid">
+
+            <article class="skill-card">
+              <img src="img/logo_solarwinds.png" alt="Logo SolarWinds" class="skill-card__img">
+              <h3>Mise en place de la solution SolarWinds</h3>
+              <details class="missions">
+                <summary>Voir les missions</summary>
+                <ul>
+                  <li>Organisation des équipements dans des groupes en fonction des sites.</li>
+                  <li>Mise en place de scripts permettant la modification des configurations des switchs.</li>
+                  <li>Mise en place de scripts PowerShell pour automatiser certaines tâches d'administration.</li>
+                  <li>Configuration de modèles pour mettre à jour à distance les switchs du parc informatique.</li>
+                  <li>Création de tableaux de bord avec des droits spécifiques selon la localisation de l'utilisateur.</li>
+                  <li>Rédaction de documentations techniques.</li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="skill-card">
+              <img src="img/4500X.png" alt="Switch Cisco 4500X" class="skill-card__img">
+              <h3>Configuration de 2 switchs Cisco cœur de réseau</h3>
+              <details class="missions">
+                <summary>Voir les missions</summary>
+                <ul>
+                  <li>Configuration des 2 switchs en cluster.</li>
+                  <li>Ajout des VLAN.</li>
+                  <li>Configuration des interfaces en « miroir » pour la résilience.</li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="skill-card">
+              <img src="img/fortigate70F.png" alt="Pare-feu Fortinet 70F" class="skill-card__img">
+              <h3>Portail captif sur un pare-feu Fortinet 70F</h3>
+              <details class="missions">
+                <summary>Voir les missions</summary>
+                <ul>
+                  <li>Configuration des paramètres du portail captif.</li>
+                  <li>Création de la page web.</li>
+                  <li>Ajout du certificat pour que la page web soit en HTTPS.</li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="skill-card">
+              <img src="img/AP_Wifi.png" alt="Plan réseau" class="skill-card__img">
+              <h3>Point d'accès Wi-Fi et bases du routage</h3>
+              <details class="missions">
+                <summary>Voir les missions</summary>
+                <ul>
+                  <li>Configuration du point d'accès Wi-Fi.</li>
+                  <li>Activation du routage et du NAT sur le PC1.</li>
+                  <li>Connexion du PC2 au point d'accès via le Wi-Fi.</li>
+                  <li>Réalisation de pings pour vérifier la connectivité des 2 appareils.</li>
+                  <li>Vérification de l'accès à internet avec le PC2.</li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="skill-card">
+              <h3>Configuration de routeurs Cisco</h3>
+              <details class="missions">
+                <summary>Voir les missions</summary>
+                <ul>
+                  <li>Attribution d'adresses IP aux différentes interfaces.</li>
+                  <li>Création de routes entre plusieurs routeurs.</li>
+                  <li>Mise en place du protocole de routage RIP.</li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-card__imgpair">
+                <img src="img/virtual_box.png" alt="Logo VirtualBox">
+                <img src="img/docker.png" alt="Logo Docker">
+              </div>
+              <h3>Administration système</h3>
+              <details class="missions">
+                <summary>Voir les missions</summary>
+                <ul>
+                  <li>Découverte d'hyperviseurs tels que VirtualBox et VMware ESXi.</li>
+                  <li>Mise en œuvre d'un système de sauvegarde avec l'outil rsync.</li>
+                  <li>Installation et configuration de l'Active Directory.</li>
+                  <li>Découverte de la conteneurisation avec Docker.</li>
+                </ul>
+              </details>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- TELECOM -->
+        <div class="tab-panel" data-panel="telecom" hidden>
+          <div class="skill-grid">
+            <article class="skill-card">
+              <h3>Étude d'un câble Ethernet</h3>
+              <details class="missions">
+                <summary>Voir les missions</summary>
+                <ul>
+                  <li>Observation de l'intérieur du câble Ethernet.</li>
+                  <li>Mesure de la résistance avec un multimètre.</li>
+                  <li>Création d'un signal impulsionnel.</li>
+                  <li>Réalisation du montage.</li>
+                  <li>Relevé du temps de propagation entre les 2 signaux.</li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="skill-card">
+              <h3>Décomposition d'un signal</h3>
+              <details class="missions">
+                <summary>Voir les missions</summary>
+                <ul>
+                  <li>Réalisation de représentations temporelles et fréquentielles.</li>
+                  <li>Décomposition de signaux en série de Fourier.</li>
+                  <li>Étude du repliement de spectre.</li>
+                  <li>Manipulation d'appareils comme un analyseur de spectres.</li>
+                  <li>Étude de la fonction « FFT » de l'oscilloscope.</li>
+                </ul>
+              </details>
+            </article>
+          </div>
+        </div>
+
+        <!-- PROGRAMMATION -->
+        <div class="tab-panel" data-panel="programmation" hidden>
+          <div class="skill-grid">
+            <article class="skill-card">
+              <h3>Réalisation du portfolio</h3>
+              <details class="missions">
+                <summary>Voir les missions</summary>
+                <ul>
+                  <li>Création de sections pour naviguer sur la page web.</li>
+                  <li>Écriture du code HTML, notamment pour les listes.</li>
+                  <li>Écriture du CSS.</li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="skill-card">
+              <img src="img/logo_php.png" alt="Logo PHP" class="skill-card__img">
+              <h3>Étude du langage PHP</h3>
+              <details class="missions">
+                <summary>Voir les missions</summary>
+                <ul>
+                  <li>Découverte de PHP : commentaires, variables, opérateurs.</li>
+                  <li>Codage à l'aide de branchements conditionnels (if/else).</li>
+                  <li>Traitement itératif avec la boucle while.</li>
+                  <li>Gestion des tableaux.</li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="skill-card">
+              <img src="img/sql.png" alt="Logo SQL" class="skill-card__img">
+              <h3>Bases de données</h3>
+              <details class="missions">
+                <summary>Voir les missions</summary>
+                <ul>
+                  <li>Étude de modèles entité-association.</li>
+                  <li>Traduction du modèle entité-association en modèle relationnel.</li>
+                  <li>Requêtes en langage SQL.</li>
+                </ul>
+              </details>
+            </article>
+          </div>
+        </div>
+
+        <!-- TELEPHONIE -->
+        <div class="tab-panel" data-panel="telephonie" hidden>
+          <div class="skill-grid">
+            <article class="skill-card">
+              <img src="img/telephone_IP.png" alt="Téléphone IP" class="skill-card__img">
+              <h3>Découverte de la téléphonie</h3>
+              <details class="missions">
+                <summary>Voir les missions</summary>
+                <ul>
+                  <li>Restauration et configuration d'un serveur d'appel.</li>
+                  <li>Câblage des téléphones avec des switchs PoE.</li>
+                  <li>Configuration des téléphones IP et SIP.</li>
+                  <li>Configuration des abonnés sur le serveur d'appel.</li>
+                  <li>Configuration du softphone X-Lite.</li>
+                  <li>Analyse d'un échange téléphonique avec Wireshark.</li>
+                  <li>Configuration du trunk SIP.</li>
+                  <li>Configuration du renvoi d'appel et de la messagerie.</li>
+                  <li>Découverte du logiciel MyPortal.</li>
+                </ul>
+              </details>
+            </article>
+          </div>
+        </div>
+
+        <!-- QUALITE -->
+        <div class="tab-panel" data-panel="qualite" hidden>
+          <div class="skill-grid skill-grid--text">
+            <article class="skill-card skill-card--text">
+              <h3>Adaptabilité</h3>
+              <p>Dans la pratique de la pêche, il faut savoir s'adapter aux conditions qui peuvent être changeantes.
+              Par exemple, si le vent se lève, il peut être nécessaire de changer de leurre ou de technique de lancer.</p>
+            </article>
+            <article class="skill-card skill-card--text">
+              <h3>Esprit d'équipe</h3>
+              <p>Lors de ma pratique du badminton, j'ai pu faire des matchs en double. J'ai dû faire preuve
+              d'esprit d'équipe afin d'élaborer des stratégies pour déstabiliser les adversaires.</p>
+            </article>
+            <article class="skill-card skill-card--text">
+              <h3>Autonomie</h3>
+              <p>J'ai pu développer cette qualité notamment lors de mon stage chez Andros. En effet, j'ai dû faire
+              preuve d'autonomie pour la réalisation de mes objectifs, mon tuteur de stage n'étant pas toujours
+              disponible lorsque je rencontrais des difficultés.</p>
+            </article>
+            <article class="skill-card skill-card--text">
+              <h3>Rigueur</h3>
+              <p>La rigueur a été très importante lors de mon stage chez Andros, notamment pour le respect des
+              procédures ainsi que pour la réalisation de mes objectifs.</p>
+            </article>
+            <article class="skill-card skill-card--text">
+              <h3>Compétences linguistiques</h3>
+              <p>Anglais : niveau B1.</p>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJETS ============ -->
+  <section class="section" id="projets">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__mark" aria-hidden="true"></span>
+        <h2>Projets</h2>
+      </div>
+
+      <div class="tabs" id="tabs-projets">
+        <div class="tabs__list" role="tablist" aria-label="Catégories de projets">
+          <button class="tab" role="tab" aria-selected="true" data-tab="personnels">Projets personnels</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="formationp">Projets du BUT Réseaux et Télécommunications</button>
+        </div>
+
+        <!-- PERSONNELS -->
+        <div class="tab-panel" data-panel="personnels">
+          <div class="project-grid">
+
+            <article class="project-card">
+              <img src="img/logo_pihole.png" alt="Logo Pi-hole" class="project-card__img">
+              <div class="project-card__body">
+                <h3>Serveur Pi-hole sur Raspberry Pi</h3>
+                <p class="project-card__ctx">Travail pratique réalisé en autodidacte.</p>
+                <p><strong>Objectifs :</strong> mettre en place un serveur DNS local filtrant publicités et
+                domaines malveillants, et améliorer la sécurité des appareils du réseau local.</p>
+                <details class="missions">
+                  <summary>Voir les missions</summary>
+                  <ul>
+                    <li>Installation et configuration de Pi-hole sur un Raspberry Pi.</li>
+                    <li>Configuration du serveur DNS pour filtrer les requêtes du réseau local.</li>
+                    <li>Mise en place de listes de blocage (publicités, trackers, domaines indésirables).</li>
+                    <li>Configuration du réseau local pour rediriger les requêtes DNS vers Pi-hole.</li>
+                    <li>Administration du serveur via son interface web.</li>
+                    <li>Surveillance des requêtes DNS et analyse des domaines bloqués.</li>
+                    <li>Maintenance et mise à jour du Raspberry Pi et de Pi-hole.</li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="img/omv.png" alt="Logo OpenMediaVault" class="project-card__img">
+              <div class="project-card__body">
+                <h3>Serveur de stockage NAS</h3>
+                <p class="project-card__ctx">Travail pratique réalisé en autodidacte.</p>
+                <p><strong>Objectifs :</strong> installer et configurer le serveur sur le réseau local, et
+                mettre en place un accès distant sécurisé aux fichiers.</p>
+                <details class="missions">
+                  <summary>Voir les missions</summary>
+                  <ul>
+                    <li>Installation du système d'exploitation OpenMediaVault.</li>
+                    <li>Configuration des partages réseau via Samba.</li>
+                    <li>Mise en place d'un RAID 1 sur les disques durs.</li>
+                    <li>Mise en place d'un antivirus analysant chaque fichier du serveur.</li>
+                    <li>Création et gestion des utilisateurs avec permissions spécifiques par dossier/fichier.</li>
+                    <li>Configuration d'un accès sécurisé via VPN et SSH pour l'administration à distance.</li>
+                    <li>Surveillance de l'état du matériel et des disques.</li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- FORMATION BUT R&T PROJETS -->
+        <div class="tab-panel" data-panel="formationp" hidden>
+
+          <h3 class="project-group__title">Cybersécurité</h3>
+          <div class="project-grid">
+
+            <article class="project-card">
+              <div class="project-card__body project-card__body--noimg">
+                <h3>Simulation d'attaque d'un réseau d'entreprise</h3>
+                <p class="project-card__ctx">Travail pratique réalisé en binôme.</p>
+                <p>
+                  <strong>Objectifs :</strong> reproduire un environnement informatique d'entreprise
+                  à l'aide de machines virtuelles, puis mettre en œuvre un scénario d'attaque afin
+                  d'identifier les vulnérabilités et de retracer les différentes étapes d'une
+                  compromission.
+                </p>
+                <details class="missions">
+                  <summary>Voir les missions</summary>
+                  <ul>
+                    <li>Conception et déploiement d'une infrastructure virtuelle représentative d'un réseau d'entreprise.</li>
+                    <li>Configuration des différents systèmes, services et composants du réseau.</li>
+                    <li>Identification des points d'entrée et des vulnérabilités exploitables de l'infrastructure.</li>
+                    <li>Mise en œuvre d'un scénario d'attaque dans un environnement contrôlé.</li>
+                    <li>Exploitation progressive des vulnérabilités et enchaînement des différentes étapes de compromission.</li>
+                    <li>Établissement d'une chronologie détaillée des actions réalisées lors de l'attaque.</li>
+                    <li>Analyse des vulnérabilités exploitées et de leur impact sur le système d'information.</li>
+                    <li>Documentation des techniques utilisées, des résultats obtenus et des contre-mesures possibles.</li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="img/logo_splunk.png" alt="Logo Splunk" class="project-card__img">
+              <div class="project-card__body project-card__body--noimg">
+                <h3>Supervision de la sécurité</h3>
+                <p class="project-card__ctx">Travail pratique réalisé individuellement.</p>
+                <p>
+                  <strong>Objectifs :</strong> mettre en place une solution de supervision de la sécurité
+                  permettant de centraliser, analyser et exploiter les événements provenant des différents
+                  systèmes d'une infrastructure informatique.
+                </p>
+                <details class="missions">
+                  <summary>Voir les missions</summary>
+                  <ul>
+                    <li>Mise en place d'une infrastructure de supervision basée sur des machines virtuelles.</li>
+                    <li>Configuration et déploiement de <strong>Splunk</strong> pour la centralisation et l'analyse des journaux.</li>
+                    <li>Collecte et remontée des logs provenant des différents systèmes et services.</li>
+                    <li>Analyse des événements et identification d'activités potentiellement malveillantes.</li>
+                    <li>Création de recherches et de tableaux de bord permettant de suivre l'activité de l'infrastructure.</li>
+                    <li>Mise en évidence d'indicateurs permettant de détecter des comportements suspects ou des tentatives d'intrusion.</li>
+                    <li>Analyse des événements de sécurité et corrélation des différentes sources de logs.</li>
+                    <li>Documentation de la configuration, des détections mises en place et des résultats obtenus.</li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__body project-card__body--noimg">
+                <h3>Pentest</h3>
+                <p class="project-card__ctx">Travail pratique réalisé en binôme.</p>
+                <p> <strong>Objectifs :</strong> identifier et exploiter les vulnérabilités présentes sur des machines de test volontairement vulnérables afin d'évaluer leur niveau de sécurité. </p>
+                <details class="missions">
+                  <summary>Voir les missions</summary>
+                  <ul>
+                      <li>Reconnaissance et analyse de l'environnement réseau.</li>
+                      <li>Identification des services, ports ouverts et vulnérabilités présents sur les machines cibles.</li>
+                      <li>Recherche et exploitation de différentes vulnérabilités, telles que <strong>EternalBlue</strong> ou les <strong>injections SQL</strong>.</li>
+                      <li>Mise en œuvre de techniques d'attaque dans un environnement de test contrôlé.</li>
+                      <li>Analyse des vecteurs d'attaque et de leur impact sur les systèmes ciblés.</li>
+                      <li>Identification des contre-mesures permettant de corriger ou de limiter les vulnérabilités exploitées.</li>
+                      <li>Documentation des différentes étapes et résultats des tests d'intrusion.</li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+          </div>
+
+          <h3 class="project-group__title">Réseaux</h3>
+          <div class="project-grid">
+
+            <article class="project-card">
+              <div class="project-card__body project-card__body--noimg">
+                <h3>Projet intégratif</h3>
+                <p class="project-card__ctx">Travail pratique réalisé en groupe de 5.</p>
+                <p><strong>Objectifs :</strong> concevoir et mettre en place une infrastructure correspondant au
+                réseau d'une petite entreprise.</p>
+                <details class="missions">
+                  <summary>Voir les missions</summary>
+                  <ul>
+                    <li>Description précise et technique de l'installation et des services réseau utilisés.</li>
+                    <li>Ordonnancement et répartition des tâches.</li>
+                    <li>Communication des différents appareils entre eux.</li>
+                    <li>Mise en œuvre des services réseau et utilisateurs.</li>
+                    <li>Mise en œuvre des attaques et démonstration des contre-mesures.</li>
+                    <li>Rédaction d'un site web présentant les missions réalisées.</li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__body project-card__body--noimg">
+                <h3>Technologies de l'internet</h3>
+                <p class="project-card__ctx">Travail pratique réalisé en binôme</p>
+                <p><strong>Objectifs :</strong> observer les connexions TCP, créer un paquet TCP de demande de
+                connexion et réaliser un outil de scan de ports.</p>
+                <details class="missions">
+                  <summary>Voir les missions</summary>
+                  <ul>
+                    <li>Installation d'un serveur FTP vsftpd sur la première machine.</li>
+                    <li>Création d'un compte utilisateur.</li>
+                    <li>Installation de FileZilla sur la deuxième machine.</li>
+                    <li>Établissement d'une connexion FTP grâce au compte créé.</li>
+                    <li>Observation de cette connexion avec Wireshark.</li>
+                    <li>Observation de la sécurité du serveur FTP (mot de passe en clair).</li>
+                    <li>Observation avec Wireshark de la déconnexion du serveur FTP.</li>
+                    <li>Installation de Scapy.</li>
+                    <li>Création d'un paquet de demande de connexion FTP.</li>
+                    <li>Observation de ce paquet sur le réseau.</li>
+                    <li>Création d'un script Scapy pour identifier les ports ouverts.</li>
+                    <li>Création d'un script Scapy permettant d'attaquer le serveur FTP.</li>
+                  </ul>
+                </details>
+                <div class="project-card__gallery">
+                  <img src="img/scan_port.png" alt="Script de scan de ports">
+                  <img src="img/ddos.png" alt="Attaque SYN Flood">
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__body">
+                <h3>Point d'accès Wi-Fi sur le réseau de l'IUT</h3>
+                <p class="project-card__ctx">Travail pratique réalisé en binôme.</p>
+                <p><strong>Objectifs :</strong> installer et configurer un point d'accès IEEE-802.11, et mettre
+                en place une sécurité d'accès.</p>
+                <details class="missions">
+                  <summary>Voir les missions</summary>
+                  <ul>
+                    <li>Réinitialisation du point d'accès Wi-Fi.</li>
+                    <li>Branchement de l'appareil sur un ordinateur via un câble Ethernet.</li>
+                    <li>Changement de l'adresse IP de la 2ᵉ carte réseau pour être dans le même réseau que le point d'accès.</li>
+                    <li>Accès à l'interface de configuration via un navigateur.</li>
+                    <li>Configuration du nom et du mot de passe Wi-Fi.</li>
+                    <li>Attribution de l'adresse IP du point d'accès via DHCP, dans le réseau de l'IUT.</li>
+                    <li>Activation du NAT.</li>
+                    <li>Branchement du point d'accès sur le réseau de l'IUT.</li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+          </div>
+
+          <h3 class="project-group__title">Télécommunications</h3>
+          <div class="project-grid">
+
+            <article class="project-card">
+              <img src="img/montage.png" alt="Montage fibre optique" class="project-card__img">
+              <div class="project-card__body">
+                <h3>Montage fonctionnel en fibre optique (1310 nm)</h3>
+                <p class="project-card__ctx">Travail pratique réalisé en binôme, pendant 3 heures.</p>
+                <p><strong>Objectifs :</strong> comprendre les mesures en photométrie et en réflectométrie sur
+                une fibre optique, savoir calculer puissance et atténuation.</p>
+                <details class="missions">
+                  <summary>Voir les missions</summary>
+                  <ul>
+                    <li>Allumage de la source lumineuse (réflectomètre).</li>
+                    <li>Sélection du mode de mesure « source lumineuse ».</li>
+                    <li>Changement de la longueur d'onde à 1310 nm.</li>
+                    <li>Branchement de la sortie du réflectomètre à la bobine d'amorce via une jarretière.</li>
+                    <li>Branchement de la bobine d'amorce à la bobine de fin.</li>
+                    <li>Branchement de la bobine de fin à un photomètre.</li>
+                    <li>Prise de mesures, notamment avec une fibre à tester.</li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="img/matlab.png" alt="Logo MATLAB" class="project-card__img">
+              <div class="project-card__body">
+                <h3>Mesurer et caractériser un signal</h3>
+                <p class="project-card__ctx">Travail pratique réalisé individuellement.</p>
+                <p><strong>Objectifs :</strong> réaliser des simulations numériques avec MATLAB.</p>
+                <details class="missions">
+                  <summary>Voir les missions</summary>
+                  <ul>
+                    <li>Initiation au langage de programmation MATLAB.</li>
+                    <li>Implémentation de différentes méthodes de calcul d'intégrales (méthode des rectangles…).</li>
+                    <li>Étude d'un signal temporel à l'aide de MATLAB.</li>
+                    <li>Étude d'un canal radio à l'aide de MATLAB.</li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+          </div>
+
+          <h3 class="project-group__title">Programmation Web</h3>
+          <div class="project-grid">
+
+            <article class="project-card">
+              <img src="img/web.png" alt="Liste en HTML/CSS" class="project-card__img">
+              <div class="project-card__body">
+                <h3>Bases de la programmation web</h3>
+                <p class="project-card__ctx">Travail pratique réalisé individuellement.</p>
+                <p><strong>Objectifs :</strong> comprendre l'utilisation des balises HTML et s'en servir pour
+                écrire le code CSS.</p>
+                <details class="missions">
+                  <summary>Voir les missions</summary>
+                  <ul>
+                    <li>Codage en HTML avec des balises.</li>
+                    <li>Création de listes avec les balises « ul » et « li ».</li>
+                    <li>Codage en CSS.</li>
+                    <li>Ajout d'un style pour le texte et les images.</li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="img/sudoku.png" alt="Grille de Sudoku" class="project-card__img">
+              <div class="project-card__body">
+                <h3>Sudoku en PHP</h3>
+                <p class="project-card__ctx">Travail pratique réalisé individuellement.</p>
+                <p><strong>Objectifs :</strong> apprendre les bases du langage PHP.</p>
+                <details class="missions">
+                  <summary>Voir les missions</summary>
+                  <ul>
+                    <li>Création de plusieurs fichiers pour organiser le projet.</li>
+                    <li>Création de fonctions pour générer une grille valide.</li>
+                    <li>Affichage du contenu de la grille dans un tableau HTML via une fonction.</li>
+                    <li>Modification d'une ancienne fonction pour créer des trous dans la grille.</li>
+                    <li>Récupération du contenu de la grille et vérification de sa validité.</li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIVERS ============ -->
+  <section class="section section--alt" id="divers">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__mark" aria-hidden="true"></span>
+        <h2>Divers</h2>
+      </div>
+
+      <div class="hobby-grid">
+        <article class="hobby-card">
+          <div class="hobby-card__imgs">
+            <img src="img/leurres.png" alt="Leurres de pêche">
+            <img src="img/lac.jpg" alt="Lac de pêche">
+          </div>
+          <h3>Pêche aux leurres</h3>
+          <p>Pratique depuis début 2022.</p>
+        </article>
+
+        <article class="hobby-card">
+          <h3>Badminton</h3>
+          <p>Pratiqué en 2021 et 2022 à Terrasson-Lavilledieu (24).</p>
+        </article>
+
+        <article class="hobby-card">
+          <h3>Sports mécaniques</h3>
+          <p>Formule 1 et MotoGP, en spectateur.</p>
+        </article>
+
+        <article class="hobby-card">
+          <h3>Randonnée</h3>
+          <p>Pendant les vacances pour découvrir de nouvelles régions, et par loisir en famille à la campagne.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__mark" aria-hidden="true"></span>
+        <h2>Contactez-moi</h2>
+      </div>
+
+      <div class="contact__grid">
+        <ul class="contact__list">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <a href="mailto:clement.guichard2.auditeur@lecnam.net">clement.guichard2.auditeur@lecnam.net</a>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L7.9 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg>
+            <a href="tel:+33660640280">06 60 64 02 80</a>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>
+              <a href="https://maps.app.goo.gl/WB6jsTc2Y8BcgxPCA" target="_blank" rel="noopener">17 Rue de la Fauconnerie, 49100 Angers</a><br>
+              <a href="https://maps.app.goo.gl/LQ4oJQGB9m7HH8qT6" target="_blank" rel="noopener">4 rue des Plantes, 24120 Terrasson-Lavilledieu</a>
+            </span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2.5 2.5 0 0 1 5 0V17M12 10v7"/></svg>
+            <a href="https://www.linkedin.com/in/cl%C3%A9ment-g-01a8272b1/" target="_blank" rel="noopener">Profil LinkedIn</a>
+          </li>
+        </ul>
+
+        <div class="contact__cta">
+          <p>Une question, une opportunité d'alternance ou de stage&nbsp;? N'hésitez pas à me contacter.</p>
+          <a href="mailto:clement.guichard2.auditeur@lecnam.net" class="btn btn--primary">Écrire un email</a>
+          <a href="CV.pdf" class="btn btn--outline" download>Télécharger le CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <p>© <span id="year"></span> Clément Guichard — Portfolio Master Cybersécurité</p>
+    <div class="site-footer__links">
+      <a href="mailto:clement.guichard2.auditeur@lecnam.net" aria-label="Email">Email</a>
+      <a href="https://www.linkedin.com/in/cl%C3%A9ment-g-01a8272b1/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      <a href="CV.pdf" download aria-label="Télécharger le CV">CV</a>
+      <button id="back-to-top" type="button">Haut de page ↑</button>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
